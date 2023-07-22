@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="about.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="navbar">
+        <div class="user">
+          <button type="button">Explore</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="info">
+          <h1>About Universal Events</h1>
+          <p>
+            Welcome to Universal Events, the ultimate online ticketing system
+            connecting the global community with diverse and thrilling
+            experiences. We take pride in creating a seamless event registration
+            and ticket purchasing process for music, skateboarding, and
+            technology events. Our platform curates electrifying music
+            festivals, thrilling skateboarding competitions, and cutting-edge
+            technology conferences. Whether you're a music enthusiast,
+            skateboarding aficionado, or tech-savvy individual, Universal Events
+            is your go-to destination. Join us for an unforgettable journey
+            celebrating creativity, innovation, and the joy of shared
+            experiences. Embrace the excitement and stay tuned for an inspiring
+            lineup of events that will leave you thrilled and inspired!
+          </p>
+          <input type="text" placeholder="Search" />
+        </div>
+      </div>
+
+      <div class="slider">
+        <i class="fa-sharp fa-solid fa-arrow-left" id="prev"></i>
+        <div class="preview">
+          <img src="" alt="" class="thumbnail" />
+          <img src="images/bg1.jpeg" alt="" class="active thumbnail" />
+          <img src="" alt="" class="thumbnail" />
+          <img src="images/bg3.jpg" alt="" class="thumbnail" />
+          <img src="" alt="" class="thumbnail" />
+          <img src="images/bg5.jpg" alt="" class="thumbnail" />
+        </div>
+        <i class="fa-sharp fa-solid fa-arrow-right" id="next"></i>
+      </div>
+    </div>
+
+    <script>
+      let prev = document.getElementById("prev");
+      let next = document.getElementById("next");
+      let thumbnail = document.getElementsByClassName("thumbnail");
+      let hero = document.getElementsByClassName("hero")[0];
+
+      let backgroundImg = [
+        "images/bg1.jpeg",
+        "images/bg2.webp",
+        "images/bg3.jpg",
+        "images/bg4.jpg",
+        "images/bg5.jpg",
+      ];
+
+      let i = 0;
+      next.addEventListener("click", function () {
+        if (i < 4) {
+          hero.style.backgroundImage = 'url("' + backgroundImg[i + 1] + '")';
+          thumbnail[i + 1].classList.add("active");
+          thumbnail[i].classList.remove("active");
+          i++;
+        }
+      });
+
+      prev.addEventListener("click", function () {
+        if (i > 0) {
+          hero.style.backgroundImage = 'url("' + backgroundImg[i - 1] + '")';
+          thumbnail[i - 1].classList.add("active");
+          thumbnail[i].classList.remove("active");
+          i--;
+        }
+      });
+    </script>
+  </body>
+</html>

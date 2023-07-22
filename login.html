@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log In page</title>
+    <link href="login.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="signin-signup">
+        <form action="" class="sign-in-form">
+          <h2 class="title">Sign in</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" />
+          </div>
+          <input
+            type="submit"
+            vlaue="Login"
+            class="btn"
+            onclick="redirectToAboutUs()"
+          />
+          <p class="social-text">Or Sign-in with a social platform:</p>
+          <div class="social-media">
+            <a href="#" class="social-icon"> <i class="fab fa-facebook"></i></a
+            ><a href="" class="social-icon"> <i class="fab fa-twitter"></i></a
+            ><a href="" class="social-icon"> <i class="fab fa-google"></i></a
+            ><a href="" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <p class="account-text">
+            Don't have a Universal Events Account?
+            <a href="#" id="sign-up-btn2">Sign Up</a>
+          </p>
+        </form>
+        <form action="" class="sign-in-form">
+          <h2 class="title">Sign up</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="text" placeholder="Email" />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" />
+          </div>
+          <input
+            type="submit"
+            vlaue="Sign up"
+            class="btn"
+            onclick="redirectToAboutUs()"
+          />
+          <p class="social-text">Or Sign-in with a social platform:</p>
+          <div class="social-media">
+            <a href="#" class="social-icon"> <i class="fab fa-facebook"></i></a
+            ><a href="" class="social-icon"> <i class="fab fa-twitter"></i></a
+            ><a href="" class="social-icon"> <i class="fab fa-google"></i></a
+            ><a href="" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+          <p class="account-text">
+            Already have a Universal Event account?
+            <a href="#" id="sign-in-btn2">Sign In</a>
+          </p>
+        </form>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>Member of Universal Events?</h3>
+            <p>
+              Welcome back to Universal Events! Please sign in to your account
+              to keep up to date with our universe of exciting opportunities,
+              from captivating concerts and thrilling sports events to
+              enlightening conferences. Your unforgettable experiences await, so
+              log in now and let the journey begin!"
+            </p>
+            <button class="btn" id="sign-in-btn">Sign In</button>
+          </div>
+          <img src="signin.svg" alt="" class="image" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>New to Universal Events?</h3>
+            <p>
+              Welcome to our all-in-one online ticket station! Sign up now to
+              gain exclusive access to an incredible lineup of events, ranging
+              from electrifying music festivals and adrenaline-pumping
+              skateboarding spectacles to cutting-edge technology conferences.
+              Don't miss out on the excitement - secure your spot today!
+            </p>
+            <button class="btn" id="sign-up-btn">Sign Up</button>
+          </div>
+          <img src="signup.svg" alt="" class="image" />
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

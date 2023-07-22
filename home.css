@@ -1,0 +1,200 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure full height for the page */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Navbar styles .navbar {
+  background: linear-gradient(135deg, #e1b3bc, #e3989a, #26192e);
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navbar-menu li {
+  margin: 0 15px;
+}
+
+.navbar-menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  color: #ff7b7f;
+} */
+
+/* Main container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2px;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  height: 100%; /* Ensure full height for the container */
+}
+
+/* Video and Image styles */
+.media {
+  width: 100%;
+  height: calc(
+    100vh - 60px
+  ); /* Adjust height to account for the navbar's height */
+  overflow: hidden;
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 20px; /* Add bottom margin */
+}
+
+video,
+img {
+  width: 100%;
+  height: 100%; /* Set the height to 100% to cover the full height of the container */
+  object-fit: fill;
+}
+
+/* Button positioned at the center bottom */
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure full height for the page */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+/* Button container styles */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align the button to the bottom of the container */
+  height: 100%;
+  position: relative; /* For absolute positioning of the button */
+}
+
+/* Incredible button styles */
+.incredible-button {
+  margin-top: 5px;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #2e2d2d;
+  border: 1px solid black;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(144, 136, 136, 0.718);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  position: absolute;
+  bottom: 10px;
+  left: 50%; /* Move the button to the horizontal center */
+  transform: translateX(-50%); /* Center the button horizontally */
+}
+
+.incredible-button:hover {
+  background-color: #398526;
+  transform: scale(1.05);
+}
+
+.incredible-button:focus {
+  outline: none;
+}
+
+.incredible-button:active {
+  transform: scale(0.98);
+}
+
+/* Main content styles */
+.main-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.main-content h1 {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main-content p {
+  font-size: 24px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Gradient overlay for the video */
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0) 100%
+  ); */
+}
+
+/* Animation for the main content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main-content {
+  animation: fadeIn 2s ease;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff5a5f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff7b7f;
+}
